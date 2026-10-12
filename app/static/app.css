@@ -1,0 +1,11 @@
+body { background: #f4f6f9; }
+.stat .card-body { padding: .75rem 1rem; }
+.stat-label { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: #6c757d; }
+.stat-value { font-size: 1.4rem; font-weight: 600; }
+#tables td code { font-size: .95rem; }
+.progress { background-color: #e9ecef; }
+.progress-text { font-size: .75rem; color: #495057; margin-top: 2px; white-space: normal; }
+.status-badge { min-width: 9rem; display: inline-block; text-align: center; }
+.deps { font-size: .72rem; color: #6c757d; }
+.err-msg { white-space: pre-wrap; word-break: break-word; font-family: var(--bs-font-monospace); font-size: .8rem; }
+.indeterminate .progress-bar { width: 100% !important; }

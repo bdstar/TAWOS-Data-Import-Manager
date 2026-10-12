@@ -1,0 +1,78 @@
+# ---------------------------------------------------------------
+# Secrets and local configuration
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------
+# Runtime data created by the application
+# ---------------------------------------------------------------
+# Job history, row errors and the cached source index (SQLite)
+state/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+
+# Application and per-job failure logs
+logs/
+*.log
+
+# ---------------------------------------------------------------
+# Datasets and database dumps (too large for GitHub's 100 MB limit)
+# ---------------------------------------------------------------
+*.sql
+*.sql.gz
+*.sql.zip
+*.zip
+*.7z
+TAWOS-dataset/
+# Keep the small test fixtures
+!tests/fixtures/*.sql
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------------
+# Editors and IDEs
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------
+# Operating system files
+# ---------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
